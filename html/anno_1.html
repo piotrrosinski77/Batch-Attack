@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zostałeś Zhakowany</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        h1 {
+            font-size: 4em;
+            margin-top: 15vh;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .cat {
+            width: 350px;
+            margin: 30px auto;
+        }
+        .glitch {
+            color: white;
+            font-size: 4em;
+            position: relative;
+            animation: glitch 1s infinite;
+        }
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px red;
+            }
+            50% {
+                text-shadow: -2px -2px lime;
+            }
+            100% {
+                text-shadow: 2px 2px blue;
+            }
+        }
+        .blink {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="glitch">ZOSTAŁEŚ ZHAKOWANY</h1>
+	 <img src="D:\Batch_attack\img\cat.jpg" alt="cat" class="cat">
+</body>
+</html>
